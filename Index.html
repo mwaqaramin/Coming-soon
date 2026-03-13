@@ -8,63 +8,28 @@
         body, html {
             height: 100%;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #000; /* Sleek black background */
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
             overflow: hidden;
         }
-
-        .container {
-            text-align: center;
-            padding: 20px;
+        /* The GIF Background */
+        .bg {
+            background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXZueXZueXZueXZueXZueXZueXZueXZueXZueXZueXZueXpueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKMGpxxidatYVJC/giphy.gif');
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(4px); /* Slight blur for style */
+            transform: scale(1.1);
         }
-
-        /* The Animated Banner */
-        .banner {
-            width: 90%;
-            max-width: 600px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
-            margin-bottom: 30px;
-        }
-
-        /* Stylish Big Text */
-        h1 {
-            font-size: 3rem;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            margin: 0;
-            background: linear-gradient(to right, #fff, #555);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: fadeIn 3s ease-in;
-        }
-
-        p {
-            font-size: 1.2rem;
-            color: #888;
-            margin-top: 10px;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <img src="https://cdn.dribbble.com/userupload/36518699/file/original-9e7c1999db762c978708124d18c92119.gif" 
-             alt="Coming Soon" class="banner">
-        
-        <h1>WE ARE COMING</h1>
-        <p>Something amazing is in the works.</p>
-    </div>
-
-</body>
-</html>
+        /* Centered Box */
+        .content {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index:
